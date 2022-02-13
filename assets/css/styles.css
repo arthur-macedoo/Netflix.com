@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@275;405;465&display=swap');
+
+:root{
+    --vermelho: #E50914;
+    --preto: #141414;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Elementos base*/
+body{
+    background: var(--preto);
+    font-family: "Outfit", sans-serif;
+    color: white;
+}
+
+header .container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+header .logo{
+    color: var(--vermelho);
+    font-family: "Outfit", Arial;
+    font-weight: 600;
+    font-size: 40px;
+}
+
+header nav a{
+    text-decoration: none;
+    color: whitesmoke;
+    margin-right: 10px;
+}
+
+header nav a:hover{
+    color: white;
+}
+
+/*Conteúdo Principal*/
+.conteudo-principal{
+    font-size: 16px;
+    background: linear-gradient(rgba(0, 0, 0,.50), rgba(0, 0, 0,.50)100%), url(../img/house-cards.png);
+    height: 400px;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.conteudo-principal .descricao{
+    margin-bottom: 40px;
+
+}
+
+.conteudo-principal .container{
+    width: 70%;
+}
+
+.container{
+    margin-left: 20px;
+}
+
+.titulo{
+    font-family: "Outfit", 'Trebuchet MS', Arial, sans-serif;
+    font-size: 45px;
+    margin-top: 15%;
+    margin-bottom: 10px;
+}
+
+.botao{
+    margin-right: 20px;
+    margin-bottom: 15px;
+    background-color: rgba(0, 0, 0,.50);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 15px;
+    font-size: 13px;
+    cursor: pointer;
+    transition: .5s ease all;
+}
+
+.botao:hover{
+    background-color: white;
+    color: black;
+}
+
+.botao i{
+    margin-right: 15px;
+}
+
+.box-conteudo{
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.carrossel-conteudos{
+    margin-top: 5px;
+}
